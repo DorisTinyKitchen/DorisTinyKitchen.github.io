@@ -1,4 +1,4 @@
-.jumbotron{
+.jumbotron_index{
   background-image: url('headline.png');
   color:white;
   background-attachment: fixed;
@@ -7,6 +7,31 @@
   margin-bottom: 0px;
 }
 
+.jumbotron_headline{
+  color:white;
+  background-attachment: fixed;
+  min-height: 165px;
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+
+.jumbotron_about{
+  background-image: url('cake1.png');
+  color:white;
+  background-attachment: fixed;
+  min-height: 165px;
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+
+.jumbotron_acknowledge{
+  background-image: url('about.png');
+  color:white;
+  background-attachment: fixed;
+  min-height: 165px;
+  margin-top:0px;
+  margin-bottom: 0px;
+}
 
 
 .jumbotron_doris {
