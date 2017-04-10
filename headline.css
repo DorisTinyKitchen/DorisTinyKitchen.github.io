@@ -10,25 +10,25 @@
 .jumbotron_headline{
   color:white;
   background-attachment: fixed;
-  min-height: 165px;
+  min-height: 150px;
   margin-top:0px;
   margin-bottom: 0px;
 }
 
 .jumbotron_about{
-  background-image: url('cake1.png');
+  background-image: url('about.png');
   color:white;
   background-attachment: fixed;
-  min-height: 165px;
+  min-height: 156px;
   margin-top:0px;
   margin-bottom: 0px;
 }
 
 .jumbotron_acknowledge{
-  background-image: url('about.png');
+  background-image: url('acknowledge.png');
   color:white;
   background-attachment: fixed;
-  min-height: 165px;
+  min-height: 156px;
   margin-top:0px;
   margin-bottom: 0px;
 }
