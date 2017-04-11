@@ -1,7 +1,31 @@
-.navbar_doris{
+.navbar_index{
   position: relative;
   min-height: 50px;
   margin-bottom: 0px;
+  border: 1px solid transparent;
+}
+@media (min-width: 768px) {
+  .navbar_index{
+    border-radius: 4px;
+  }
+}
+
+.navbar_top{
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 30px;
+  border: 1px solid transparent;
+}
+@media (min-width: 768px) {
+  .navbar_doris{
+    border-radius: 4px;
+  }
+}
+
+.navbar_bottom{
+  position: relative;
+  min-height: 50px;
+  margin-top: 30px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
