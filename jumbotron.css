@@ -2,7 +2,7 @@
   background-image: url('headline.png');
   color:white;
   background-attachment: fixed;
-  min-height: 756px;
+  min-height: 700px;
   margin-top:0px;
   margin-bottom: 0px;
 }
@@ -10,7 +10,7 @@
 .jumbotron_headline{
   color:white;
   background-attachment: fixed;
-  min-height: 150px;
+  min-height: 145px;
   margin-top:0px;
   margin-bottom: 0px;
 }
@@ -18,7 +18,7 @@
 .jumbotron_about{
   background-image: url('about.png');
   color:white;
-  min-height: 156px;
+  min-height: 145px;
   margin-top:0px;
   margin-bottom: 0px;
 }
@@ -27,7 +27,7 @@
   background-image: url('acknowledge.png');
   color:white;
   background-attachment: fixed;
-  min-height: 156px;
+  min-height: 145px;
   margin-top:0px;
   margin-bottom: 0px;
 }
