@@ -15,6 +15,22 @@
   margin-bottom: 0px;
 }
 
+.jumbotron_menu{
+  background-image: url('menu.png');
+  background-attachment: fixed;
+  min-height: 145px;
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+
+
+.jumbotron_recipes{
+  background-image: url('recipes.png');
+  min-height: 145px;
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+
 .jumbotron_about{
   background-image: url('about.png');
   color:white;
