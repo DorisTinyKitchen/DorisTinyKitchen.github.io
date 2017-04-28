@@ -13,7 +13,7 @@
 
   <body>
 
-<!..the row for the headerlines of the website..>
+<!--the row for the headerlines of the website-->
   <div class="jumbotron_menu">
     <div class="row">
       <div class="col-sm-12 text_content">
@@ -25,7 +25,7 @@
 
 
 
-<!..NaviBar..>
+<!--NaviBar-->
 <nav class="navbar_top navbar-inverse-doris">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
@@ -41,9 +41,196 @@
   </div>
 </nav>
 
+<!--main conent of this page-->
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-5 menu-size">
+        <h3>Menu</h3>
+        <ul>
+          <div class="row">
+            <div class="col-sm-6">
+              <li>Strawberry Cake</li>
+            </div>
+            <div class="col-sm-6">
+              <button type="button" class="btn btn-warning" onclick="function_add_strawberrycake()">+</button>
+              <button type="button" class="btn btn-warning" onclick="function_minus_strawberrycake()">-</button>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <li>Green Bean Cake</li>
+            </div>
+            <div class="col-sm-6">
+              <button type="button" class="btn btn-warning" onclick="function_add_greenbeancake()">+</button>
+              <button type="button" class="btn btn-warning" onclick="function_minus_greenbeancake()">-</button>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <li>Blueberry Muffin</li>
+            </div>
+            <div class="col-sm-6">
+              <button type="button" class="btn btn-warning" onclick="function_add_blueberrymuffin()">+</button>
+              <button type="button" class="btn btn-warning" onclick="function_minus_blueberrymuffin()">-</button>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <li>Walnut Cookie</li>
+            </div>
+            <div class="col-sm-6">
+              <button type="button" class="btn btn-warning" onclick="function_add_walnutcookie()">+</button>
+              <button type="button" class="btn btn-warning" onclick="function_minus_walnutcookie()">-</button>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <li>Cranberry Cookie</li>
+            </div>
+            <div class="col-sm-6">
+              <button type="button" class="btn btn-warning" onclick="function_add_cranberrycookie()">+</button>
+              <button type="button" class="btn btn-warning" onclick="function_minus_cranberrycookie()">-</button>
+            </div>
+          </div>
+         
+        </ul>
+
+      </div>
 
 
-<!..Navbar at the bottom..>
+
+
+      <div class="col-sm-7 text-center">
+       <div class="content-box">
+        <div class="row">
+          <h3>Your Order</h3>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+          <h4>Disserts</h4>
+          <p id="strawberrycake"></p>
+          <p id="greenbeancake"></p>
+          <p id="blueberrymuffin"></p>
+          <p id="walnutcookie"></p>
+          <p id="cranberrycookie"></p>
+          </div>
+
+          <div class="col-sm-6">
+            <h4>Quantity</h4>
+            <p id="strawberrycake1"></p>
+            <p id="greenbeancake1"></p>
+            <p id="blueberrymuffin1"></p>
+            <p id="walnutcookie1"></p>
+            <p id="cranberrycookie1"></p>
+          </div>
+        </div>
+      </div>
+
+
+<script>
+var a=0 
+
+function function_add_strawberrycake() {
+    document.getElementById("strawberrycake").innerHTML = "Strawberry Cake";
+    var a = document.getElementById("strawberrycake1").innerHTML;
+    if (a > 0) {
+      a = parseFloat(a);
+    } else {
+      a = 0;
+    }
+    document.getElementById("strawberrycake1").innerHTML = a + 1;
+}
+function function_minus_strawberrycake() {
+    var a = document.getElementById("strawberrycake1").innerHTML;
+    if (a > 0) {
+      document.getElementById("strawberrycake1").innerHTML -= 1;
+    } else {
+    }
+}
+</script>
+
+<script>
+var b=0
+
+function function_add_greenbeancake() {
+    document.getElementById("greenbeancake").innerHTML = "Green Bean Cake";
+    document.getElementById("greenbeancake1").innerHTML = b=b+1;
+}
+function function_minus_greenbeancake() {
+    document.getElementById("greenbeancake1").innerHTML = b=b-1;
+}
+</script>
+
+<script>
+var c=0
+
+function function_add_blueberrymuffin() {
+    document.getElementById("blueberrymuffin").innerHTML = "Blueberry Muffin";
+    document.getElementById("blueberrymuffin1").innerHTML = c=c+1;
+}
+function function_minus_blueberrymuffin() {
+    document.getElementById("blueberrymuffin1").innerHTML = c=c-1;
+}
+</script>
+
+<script>
+var d=0
+
+function function_add_walnutcookie() {
+    document.getElementById("walnutcookie").innerHTML = "Walnut Cookie";
+    document.getElementById("walnutcookie1").innerHTML = d=d+1;
+}
+function function_minus_walnutcookie() {
+    document.getElementById("walnutcookie1").innerHTML = d=d-1;
+}
+</script>
+
+<script>
+var e=0
+
+function function_add_cranberrycookie() {
+    document.getElementById("cranberrycookie").innerHTML = "Cranberry Cookie";
+    document.getElementById("cranberrycookie1").innerHTML = e=e+1;
+}
+function function_minus_cranberrycookie() {
+    document.getElementById("cranberrycookie1").innerHTML = e=e-1;
+}
+</script>
+
+
+
+
+
+
+       
+
+
+
+
+        </div>
+
+       </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+<!--Navbar at the bottom-->
 <nav class="navbar_bottom navbar-inverse-doris navbar-fixed-bottom text-center">
   <div class="container-fluid">
    	
