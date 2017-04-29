@@ -8,7 +8,7 @@
 
 
 <head>
-	<title>Doris' Tiny kitchen</title>
+  <title>Doris' Tiny kitchen</title>
 </head>
 
   <body>
@@ -17,8 +17,8 @@
   <div class="jumbotron_menu">
     <div class="row">
       <div class="col-sm-12 text_content">
-		    <h1 class="text-center" style="color: black;">Doris' Tiny Kitchen</h1>
-		    <h4 class="text-center" style="color: black;">A tiny girl's cooking experience</h4>
+        <h1 class="text-center" style="color: black;">Doris' Tiny Kitchen</h1>
+        <h4 class="text-center" style="color: black;">A tiny girl's cooking experience</h4>
       </div>
     </div>
   </div>
@@ -35,7 +35,7 @@
       <li><a href="acknowledge.html">ACKNOWLEDGE</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-align-right">
-   	  <li><a href="about.html">ABOUT</a></li>
+      <li><a href="about.html">ABOUT</a></li>
       <li><a href="http://www.tinydoris.com">BLOG</a></li>
     </ul>
   </div>
@@ -50,7 +50,7 @@
         <ul>
           <div class="row">
             <div class="col-sm-6">
-              <li>Strawberry Cake</li>
+              <li><img src="strawberry_cake.jpg" weith="125" height="125">Strawberry Cake</li>
             </div>
             <div class="col-sm-6">
               <button type="button" class="btn btn-warning" onclick="function_add_strawberrycake()">+</button>
@@ -60,7 +60,7 @@
 
           <div class="row">
             <div class="col-sm-6">
-              <li>Green Bean Cake</li>
+              <li><img src="greenbean.jpg" weith="125" height="125">Green Bean Cake</li>
             </div>
             <div class="col-sm-6">
               <button type="button" class="btn btn-warning" onclick="function_add_greenbeancake()">+</button>
@@ -70,7 +70,7 @@
 
           <div class="row">
             <div class="col-sm-6">
-              <li>Blueberry Muffin</li>
+              <li><img src="blueberry_muffin.jpg" weith="125" height="125">Blueberry Muffin</li>
             </div>
             <div class="col-sm-6">
               <button type="button" class="btn btn-warning" onclick="function_add_blueberrymuffin()">+</button>
@@ -80,7 +80,7 @@
 
           <div class="row">
             <div class="col-sm-6">
-              <li>Walnut Cookie</li>
+              <li><img src="walnut_cookie.jpg" weith="125" height="125">Walnut Cookie</li>
             </div>
             <div class="col-sm-6">
               <button type="button" class="btn btn-warning" onclick="function_add_walnutcookie()">+</button>
@@ -90,7 +90,7 @@
 
           <div class="row">
             <div class="col-sm-6">
-              <li>Cranberry Cookie</li>
+              <li><img src="crawsberry_cookie.jpg" weith="125" height="125">Cranberry Cookie</li>
             </div>
             <div class="col-sm-6">
               <button type="button" class="btn btn-warning" onclick="function_add_cranberrycookie()">+</button>
@@ -106,19 +106,24 @@
 
 
       <div class="col-sm-7 text-center">
-       <div class="content-box">
+        <div class="row">
+          <p>My dear friend, </p>
+          <p>All disserts in the menu have been baked and tested by Doris in person. If you are interest in tasting one of those, please add them in the following order and email the details to Doris. She will deliver to you on time. Most importantly, all these disserts are given for free. Your willingness to have a try of her bakery is the best encouragement for her to continue this hobby.</p>
+        </div>
+
+       <div class="content-box-menu">
         <div class="row">
           <h3>Your Order</h3>
         </div>
 
         <div class="row">
           <div class="col-sm-6">
-          <h4>Disserts</h4>
-          <p id="strawberrycake"></p>
-          <p id="greenbeancake"></p>
-          <p id="blueberrymuffin"></p>
-          <p id="walnutcookie"></p>
-          <p id="cranberrycookie"></p>
+            <h4>Disserts</h4>
+            <p id="strawberrycake"></p>
+            <p id="greenbeancake"></p>
+            <p id="blueberrymuffin"></p>
+            <p id="walnutcookie"></p>
+            <p id="cranberrycookie"></p>
           </div>
 
           <div class="col-sm-6">
@@ -129,13 +134,25 @@
             <p id="walnutcookie1"></p>
             <p id="cranberrycookie1"></p>
           </div>
+          
+          <div class="row">
+           <img src="menu_page.jpeg" height="200" width="500"> 
+          </div>
+         
+            
+          </div>
+
+         
+        
+
         </div>
+
+          
       </div>
 
 
 <script>
 var a=0 
-
 function function_add_strawberrycake() {
     document.getElementById("strawberrycake").innerHTML = "Strawberry Cake";
     var a = document.getElementById("strawberrycake1").innerHTML;
@@ -157,51 +174,93 @@ function function_minus_strawberrycake() {
 
 <script>
 var b=0
-
 function function_add_greenbeancake() {
     document.getElementById("greenbeancake").innerHTML = "Green Bean Cake";
-    document.getElementById("greenbeancake1").innerHTML = b=b+1;
+    var b = document.getElementById("greenbeancake1").innerHTML;
+    if (b > 0) {
+      b = parseFloat(b);
+    } else {
+      b=0;
+    }
+     document.getElementById("greenbeancake1").innerHTML = b + 1;
 }
 function function_minus_greenbeancake() {
-    document.getElementById("greenbeancake1").innerHTML = b=b-1;
+    var a = document.getElementById("greenbeancake1").innerHTML;
+    if (a > 0) {
+      document.getElementById("greenbeancake1").innerHTML -= 1;
+    } else {
+    }
 }
 </script>
 
-<script>
-var c=0
 
+<script>
+var c=0 
 function function_add_blueberrymuffin() {
     document.getElementById("blueberrymuffin").innerHTML = "Blueberry Muffin";
-    document.getElementById("blueberrymuffin1").innerHTML = c=c+1;
+    var c = document.getElementById("blueberrymuffin1").innerHTML;
+    if (c > 0) {
+      c = parseFloat(c);
+    } else {
+      c = 0;
+    }
+    document.getElementById("blueberrymuffin1").innerHTML = c + 1;
 }
 function function_minus_blueberrymuffin() {
-    document.getElementById("blueberrymuffin1").innerHTML = c=c-1;
+    var c = document.getElementById("blueberrymuffin1").innerHTML;
+    if (c > 0) {
+      document.getElementById("blueberrymuffin1").innerHTML -= 1;
+    } else {
+    }
 }
 </script>
 
-<script>
-var d=0
 
+<script>
+var d=0 
 function function_add_walnutcookie() {
     document.getElementById("walnutcookie").innerHTML = "Walnut Cookie";
-    document.getElementById("walnutcookie1").innerHTML = d=d+1;
+    var d = document.getElementById("walnutcookie1").innerHTML;
+    if (d > 0) {
+      d = parseFloat(d);
+    } else {
+      d = 0;
+    }
+    document.getElementById("walnutcookie1").innerHTML = d + 1;
 }
 function function_minus_walnutcookie() {
-    document.getElementById("walnutcookie1").innerHTML = d=d-1;
+    var d = document.getElementById("walnutcookie1").innerHTML;
+    if (d > 0) {
+      document.getElementById("walnutcookie1").innerHTML -= 1;
+    } else {
+    }
 }
 </script>
 
 <script>
-var e=0
-
+var e=0 
 function function_add_cranberrycookie() {
-    document.getElementById("cranberrycookie").innerHTML = "Cranberry Cookie";
-    document.getElementById("cranberrycookie1").innerHTML = e=e+1;
+    document.getElementById("cranberrycookie").innerHTML = "Walnut Cookie";
+    var e = document.getElementById("cranberrycookie1").innerHTML;
+    if (e > 0) {
+      e = parseFloat(e);
+    } else {
+      e = 0;
+    }
+    document.getElementById("cranberrycookie1").innerHTML = e + 1;
 }
 function function_minus_cranberrycookie() {
-    document.getElementById("cranberrycookie1").innerHTML = e=e-1;
+    var e = document.getElementById("cranberrycookie1").innerHTML;
+    if (e > 0) {
+      document.getElementById("cranberrycookie1").innerHTML -= 1;
+    } else {
+    }
 }
 </script>
+
+
+
+
 
 
 
@@ -233,7 +292,7 @@ function function_minus_cranberrycookie() {
 <!--Navbar at the bottom-->
 <nav class="navbar_bottom navbar-inverse-doris navbar-fixed-bottom text-center">
   <div class="container-fluid">
-   	
+    
   </div>
 </nav>
 

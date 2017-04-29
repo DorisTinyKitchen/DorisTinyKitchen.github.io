@@ -17,12 +17,17 @@
 
 .jumbotron_menu{
   background-image: url('menu.png');
-  background-attachment: fixed;
   min-height: 145px;
   margin-top:0px;
   margin-bottom: 0px;
 }
 
+.jumbotron_menuside{
+  background-image: url('menu_page.jpeg');
+  min-height: 145px;
+  margin-top:0px;
+  margin-bottom: 0px;
+}
 
 .jumbotron_recipes{
   background-image: url('recipes.png');
