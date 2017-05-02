@@ -115,13 +115,19 @@
 
        <div class="content-box-menu">
         <div class="row">
-          <h3>Your Order</h3>
+          <div class=col-sm-4>
+          </div>
+          <div class=col-sm-4>
+          <h3 style="font-weight: bold; border-bottom: thick double #000000;">Your Order</h3>
+          </div>
+          <div class=col-sm-4>
+          </div>
         </div>
 
         <!--dish names-->
         <div class="row row-height">
           <div class="col-sm-6">
-            <h4>Disserts</h4>
+            <h4><u>Disserts</u></h4>
             <p id="strawberrycake"></p>
             <p id="greenbeancake"></p>
             <p id="blueberrymuffin"></p>
@@ -131,7 +137,7 @@
 
         <!--quantity of order-->
           <div class="col-sm-6">
-            <h4>Quantity</h4>
+            <h4><u>Quantity</u></h4>
             <p id="strawberrycake1"></p>
             <p id="greenbeancake1"></p>
             <p id="blueberrymuffin1"></p>
@@ -149,7 +155,7 @@
         <!--order and comments place-->
 
         <div class="row">
-          <p style='font-weight: bold;'>Please leave your name, address, contact numbers and delivery time here:</p>
+          <p style='font-weight: bold; border-top: thick double #000000;' >Please leave your name, contact numbers, address, and delivery time here:</p>
         <div class="text-right">
           <form action="welcome.php" method="post">
               <div class=col-sm-6>
@@ -164,7 +170,7 @@
                 <label for="comment text-center">Notes:</label>
                  <input type="text" name="Notes"><br>
 
-                <input type="submit">
+                <input type="submit" style="background-color: white;">
               </div>
           </form>
         </div>
