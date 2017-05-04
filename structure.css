@@ -1,7 +1,7 @@
 .animation_picture{
   position: relative;
   -webkit-animation-name: index_moving; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 60s; /* Safari 4.0 - 8.0 */
   -webkit-animation-iteration-count: infinite;
   animation-name: index_moving;
   animation-duration: 60s;
