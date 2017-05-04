@@ -1,5 +1,39 @@
+.animation_picture{
+  position: relative;
+  -webkit-animation-name: index_moving; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite;
+  animation-name: index_moving;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes index_moving {
+    0%   {left:0px; top:0px;}
+    20%  {left:1000px; top:-780px;}
+    40%  {left:1000px; top:0px;}
+    60%  {left:0px; top:-780px;}
+    80%  {left:1000px; top:-780px;}
+    100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes index_moving {
+     0%   {left:0px; top:0px;}
+    20%  {left:1000px; top:-780px;}
+    40%  {left:1000px; top:0px;}
+    60%  {left:0px; top:-780px;}
+    80%  {left:1000px; top:-780px;}
+    100% {left:0px; top:0px;}
+
+}
+
+
+
+
 .text_content{
-	margin:10px; padding:20px;
+	margin:20px; padding:20px;
 }
 
 .headline_padding{
