@@ -1,5 +1,6 @@
 .jumbotron_index{
   background-image: url('headline.png');
+  background-size: cover;
   color:white;
   background-attachment: fixed;
   min-height: 700px;
@@ -10,6 +11,7 @@
 .jumbotron_headline{
   color:white;
   background-attachment: fixed;
+  background-size: cover;
   min-height: 145px;
   margin-top:0px;
   margin-bottom: 0px;
@@ -17,6 +19,7 @@
 
 .jumbotron_menu{
   background-image: url('menu.png');
+  background-size: cover;
   min-height: 145px;
   margin-top:0px;
   margin-bottom: 0px;
@@ -24,6 +27,7 @@
 
 .jumbotron_menuside{
   background-image: url('menu_page.jpeg');
+  background-size: cover;
   min-height: 145px;
   margin-top:0px;
   margin-bottom: 0px;
@@ -31,6 +35,7 @@
 
 .jumbotron_recipes{
   background-image: url('recipes.png');
+  background-size: cover;
   min-height: 145px;
   margin-top:0px;
   margin-bottom: 0px;
@@ -38,6 +43,7 @@
 
 .jumbotron_about{
   background-image: url('about.png');
+  background-size: cover;
   color:white;
   min-height: 145px;
   margin-top:0px;
@@ -46,6 +52,7 @@
 
 .jumbotron_acknowledge{
   background-image: url('acknowledge.png');
+  background-size: cover;
   color:white;
   background-attachment: fixed;
   min-height: 145px;

@@ -60,7 +60,11 @@
 
 
 .row-height{
-	min-height: 380px
+	min-height: 350px
+}
+
+.row-height_1{
+  min-height: 150px
 }
 
 .fixed {
